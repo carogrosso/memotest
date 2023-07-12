@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemoTest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Juego del MemoTest</h1>
+  </header>
+
+<div class="row">
+<div class="titulos col-md-4">
+  <!-- ESTO SE VE AL ENTRAR -->
+  <h1 id="titulobienvenida">Vamos a jugar!</h1>
+  <h3 id="msjbienvenida">Da vuelta una ficha para comenzar... suerte!</h3>
+
+  <!-- ESTO SE VE AL EMPEZAR A JUGAR -->
+  <h1 id="tupartida" class="display-none">Tu partida:</h1>
+  <h3 id="puntaje" class="display-none">Puntaje: <span id="cantidad"></span></h3>
+  <h3 id="mensaje"></h3>
+
+  <!-- ESTO SE VE AL FINALIZAR LA PARTIDA -->
+  <button id="reiniciar" class="display-none btn btn-danger" onclick="reiniciar()">Reiniciar juego</button>
+</div>
+
+  <div class="container col-md-8">
+    <div class="grid">
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Caro Grosso - 2022</p>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+</html>
