@@ -101,7 +101,7 @@ const fichas = [
   function crearTablero() {
     for (let i=0; i<fichas.length; i++){
       var ficha = document.createElement("img")
-      ficha.setAttribute("src", "fichas/inicio.png")
+      ficha.setAttribute("src", "fichas/dorso.png")
       ficha.setAttribute('data-id', i)
       ficha.addEventListener("click", elegir)
       grid.appendChild(ficha)
@@ -126,8 +126,8 @@ const fichas = [
     
 
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'fichas/inicio.png')
-      cards[optionTwoId].setAttribute('src', 'fichas/inicio.png')
+      cards[optionOneId].setAttribute('src', 'fichas/dorso.png')
+      cards[optionTwoId].setAttribute('src', 'fichas/dorso.png')
       mensaje.innerHTML = "Misma carta, elegí otra!"
       actualizarTextos()
     }
@@ -140,8 +140,8 @@ const fichas = [
       cards[optionTwoId].removeEventListener('click', elegir)
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute("src", "fichas/inicio.png")
-      cards[optionTwoId].setAttribute("src", "fichas/inicio.png")
+      cards[optionOneId].setAttribute("src", "fichas/dorso.png")
+      cards[optionTwoId].setAttribute("src", "fichas/dorso.png")
       mensaje.innerHTML  = "Segui intentando!"
       actualizarTextos()
 
